@@ -24,8 +24,10 @@ let clicks = 0;
 no_button.addEventListener('click', () => {
     // Change banner source
     let banner = document.getElementById('banner');
+    let src_img = ["no.gif", "no1.jpg", "no2.jpg", "no3.jpg"];
     if (clicks === 0) {
-        banner.src = "images/no.gif";
+        let randomIndex = Math.floor(Math.random() * src_img.length);
+        banner.src = "images/" + src_img[randomIndex];
         refreshBanner();
     }
     clicks++;
