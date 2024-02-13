@@ -24,7 +24,7 @@ let clicks = 0;
 no_button.addEventListener('click', () => {
     // Change banner source
     let banner = document.getElementById('banner');
-    let src_img = ["no.gif", "no1.jpg", "no2.jpg", "no3.jpg"];
+    let src_img = [ "no1.jpg", "no2.jpg", "no3.jpg"];
     if (clicks === 0) {
         let randomIndex = Math.floor(Math.random() * src_img.length);
         banner.src = "images/" + src_img[randomIndex];
@@ -55,7 +55,7 @@ no_button.addEventListener('click', () => {
 yes_button.addEventListener('click', () => {
     // change banner gif path
     let banner = document.getElementById('banner');
-    banner.src = "images/yes.gif";
+    banner.src = "images/yes1.jpg";
     refreshBanner();
     // hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
